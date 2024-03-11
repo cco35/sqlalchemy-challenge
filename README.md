@@ -4,7 +4,7 @@ Climate Analysis and Flask App
 
 This project includes an analysis of climate data for Honolulu, Hawaii, and the design of a Flask API based on the analysis. The project has been completed, and this README serves as documentation for the project.
 
-Project Structure
+## Project Structure
 
 The project consists of two main parts:
 
@@ -20,7 +20,7 @@ The project consists of two main parts:
 
 ### Part 1: Analysis and Exploration of Climate Data
 
-In this section, Python and SQLAlchemy were used to analyze and explore the climate data. The following steps were completed:
+In this section, Python and SQLAlchemy were used to analyze and explore the climate data. This was done as follows:
 
 - Connected to the SQLite database using SQLAlchemy.
 - Reflected tables into classes using `automap_base()` and saved references to the classes named `station` and `measurement`.
@@ -29,12 +29,12 @@ In this section, Python and SQLAlchemy were used to analyze and explore the clim
 
 ### Part 2: Climate App
 
-The Flask API was designed based on the queries developed during the analysis phase. The following route designs were implemented:
+The Flask API was designed based on the queries developed during the analysis phase. The following routes were created:
 
 - `/`: Started at the homepage and listed all available routes.
-- `/api/v1.0/precipitation`: Converted the query results from precipitation analysis to a dictionary using date as the key and prcp as the value. Returned the JSON representation of the dictionary.
+- `/api/v1.0/precipitation`: Converted the query results from precipitation analysis to a dictionary using the date as the key and prcp as the value. Returned the JSON representation of the dictionary.
 - `/api/v1.0/stations`: Returned a JSON list of stations from the dataset.
-- `/api/v1.0/tobs`: Queried the dates and temperature observations of the most-active station for the previous year of data. Returned a JSON list of temperature observations for the previous year.
+- `/api/v1.0/tobs`: Queried the dates and temperature observations of the most-active station for the previous year of data and returned a JSON list of temperature observations for the previous year.
 - `/api/v1.0/<start>` and `/api/v1.0/<start>/<end>`: Returned a JSON list of the minimum temperature, the average temperature, and the maximum temperature for a specified start or start-end range.
 
 ## Repository Structure
@@ -42,7 +42,7 @@ The Flask API was designed based on the queries developed during the analysis ph
 - **climate_starter.ipynb**: Jupyter Notebook containing the climate data analysis.
 - **app.py**: Flask application file containing the API routes.
 - **hawaii.sqlite**: SQLite database containing the climate data.
-- **README.md**: This README file providing an overview of the project.
+- **README.md**: This README file provides an overview of the project.
 
 ## Tools Used
 
@@ -54,4 +54,4 @@ The Flask API was designed based on the queries developed during the analysis ph
 
 ## Conclusion
 
-This project has provided valuable insights into the climate of Honolulu, Hawaii, and has successfully implemented a Flask API for accessing the analyzed data.
+This project provides valuable insights into the climate of Honolulu, Hawaii, and successfully implemented a Flask API for accessing the analyzed data.
