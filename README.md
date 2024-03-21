@@ -54,4 +54,4 @@ The Flask API was designed based on the queries developed during the analysis ph
 
 ## Conclusion
 
-This project provides valuable insights into the climate of Honolulu, Hawaii, and successfully implemented a Flask API for accessing the analyzed data.
+This project provides valuable insights into the climate of Honolulu, Hawaii, and successfully implemented a Flask API for accessing the analyzed data via the appropriate route.
